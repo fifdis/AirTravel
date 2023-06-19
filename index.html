@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+		<title>Авиаперелеты</title>
+	</head>
+	<body>
+		<header>
+			<section class="aviahead">
+				<div>
+					<h1><b>Авиаперелеты</b></h1>
+					<h3>из Санкт-Петербурга</h3>
+				</div>
+			</section>
+
+			<nav class="navigation">
+				<nav class="w3-animate-right w3-2019-galaxy-blue" id="desktop">
+					<a href="#first">Главное</a>
+					<a href="#ticket">Оформить билет</a>
+					<a href="travel.html">Популярные направления</a>
+				</nav>
+
+				<div class="w3-main" style="margin-left:200px" id="open_mob">
+					<button class="w3-opennav w3-hide-large w3-animate-left w3-animate-right w3-2019-galaxy-blue" onclick="w3_open()">&#9776;</button>
+				</div>
+				<nav class="w3-sidenav w3-collapse w3-animate-right w3-2019-galaxy-blue" id="mobile">
+					<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-hide-large">Закрыть &times;</a>
+					<a href="#first">Главное</a>
+					<a href="#ticket">Оформить билет</a>
+					<a href="travel.html">Популярные направления</a>
+				</nav>
+
+			</nav>
+			
+		</header>
+
+		<section id="first">
+			<h1><b>О перелетах</b></h1>
+			<p>В преддверии летних отпусков петербуржцы стали чаще интересоваться отдыхом за границей, чем в аналогичный период прошлого года. 
+				Как следует из информации на сайте аэропорта Пулково, из Петербурга в данный момент открыты прямые рейсы по <b>24 международным направлениям (14 стран)</b>.
+				В частности, для петербуржцев по прямым рейсам доступны Турция, Арабские Эмираты, Египет, Таиланд, Китай, Сербия, Шри-Ланка и некоторые страны СНГ. 
+				Впрочем, этим список не ограничивается, так как через эти страны горожане летят в Европу и даже США.
+			</p>
+			<a class="w3-button w3-blue w3-round-xlarge w3-padding-large" id="button1" href="travel.html">Посмотреть направления</a>
+		</section>
+		<section id="ticket">
+			<div class="w3-container">
+				<div id="contacts">
+				<h1><b>Вы можете оставить заявку на офрмление билета</b></h1>
+				<h3>Мы свяжемся с вами в ближайшее время</h3>
+					<div class="btns_container">
+						<button id="button2" class="w3-button w3-white w3-hover-blue" onclick="document.getElementById('form').style.display='block'">Оставить заявку</button>
+
+						<div id="form" class="w3-modal">
+							<div class="w3-modal-content w3-2019-galaxy-blue w3-animate-top" style="max-width:600px">
+								<div class="w3-center">
+									<span onclick="document.getElementById('form').style.display='none'" 
+									class="w3-button w3-xlarge w3-hover-blue w3-display-topright" title="Закрыть окно">&times;</span>
+								</div>
+								<form class="w3-container">
+									<div class="w3-section" >
+										<label><b>ФИО</b></label>
+										<input class="w3-input w3-border" type="text" placeholder="(Ваши ФИО)"
+										name="name" required>
+										<label><b>Номер телефона</b></label>
+										<input class="w3-input w3-border" type="text" placeholder="(Ваша почта)"
+										name="phone" required>
+										<label><b>Какое направление вас интересует?</b></label>
+										<input class="w3-input w3-border" type="text" placeholder="(Ваша тема)"
+										name="travel" required>
+										<button class="w3-button w3-block w3-white w3-hover-blue w3-section
+										w3-padding" type="submit">Отправить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+		<footer>
+			<a>© 2023 Марина Рафальская. <br> Все права защищены.</a> 
+		</footer>
+		<script>
+			function w3_open() 
+			{
+				document.getElementById("mobile").style.display = "block";
+				
+			}
+			function w3_close() 
+			{
+				document.getElementById("mobile").style.display = "none";
+				
+			}
+		</script>
+	</body>
+
+</html>

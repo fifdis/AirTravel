@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+		<title>Популярные направления</title>
+	</head>
+	<body class="w3-container">
+		<header>
+			<section class="aviahead">
+				<div>
+					<h1><b>Популярные направления</b></h1>
+				</div>
+			</section>
+            <nav class="navigation">
+				<nav class="w3-animate-right w3-2019-galaxy-blue" id="desktop">
+					<a href="index.html">Вернуться на главную</a>
+				</nav>
+
+				<div class="w3-main" style="margin-left:200px" id="open_mob">
+					<button class="w3-opennav w3-hide-large w3-animate-left w3-animate-right w3-2019-galaxy-blue" onclick="w3_open()">&#9776;</button>
+				</div>
+				<nav class="w3-sidenav w3-collapse w3-animate-right w3-2019-galaxy-blue" id="mobile">
+					<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-hide-large">Закрыть &times;</a>
+					<a href="index.html">Вернуться на главную</a>
+				</nav>
+
+			</nav>
+        </header>
+        <section id="table">
+            <table class="w3-table-all w3-large">
+
+                <tr class="w3-hover-blue w3-blue-grey">
+                
+                  <th>Город</th>
+                
+                  <th class="w3-center">Описание</th>
+                
+                  <th>Фотография</th>
+                
+                </tr>
+                
+                <tr class="w3-pale-green w3-hover-light-blue">
+                
+                  <td>Дубай</td>
+                
+                  <td class="w3-center">Эмират в ОАЭ. Расположен на Аравийском полуострове на юге Персидского залива. <br>
+                    Среди семи эмиратов, 
+                    входящих в состав страны, занимает первое место<br> по численности населения и второе после Абу-Даби по площади. </td>
+                
+                  <td><img src="img/dubai.jpg"></img></td>
+                
+                </tr>
+                  <tr class="w3-pale-green w3-hover-light-blue">
+                
+                    <td>Стамбул</td>
+                  
+                    <td class="w3-center">Крупнейший город Турции, главный торговый, <br> промышленный и культурный центр, основной порт страны. <br>По численности населения третий город в Европе. </td>
+                  
+                    <td><img src="img/stambul.jpg"></img></td>
+                  
+                  </tr>
+                
+             <tr class="w3-pale-green w3-hover-light-blue">
+                
+                <td>Доха</td>
+                  
+                    <td class="w3-center">Столица и крупнейший город арабского государства Катар, <br> расположенный у побережья Персидского залива. <br>Административный центр муниципалитета Ад-Доха </td>
+                  
+                    <td><img src="img/doha.jpg"></img></td>
+                  
+                </tr>
+                
+            </tr>
+            <tr class="w3-pale-green w3-hover-light-blue">
+          
+              <td>Тбилиси</td>
+            
+              <td class="w3-center">Столица и крупнейший город Грузии, расположенный на берегу реки Куры <br>с населением около 1,2 миллиона человек. Город был основан в V веке. <br>Тбилиси - важнейший промышленный, социальный и культурный центр Грузии </td>
+            
+              <td><img src="img/tbilisi.jpg"></img></td>
+            
+            </tr>
+          
+                </table>
+
+
+        </section>
+
+          <footer>
+			<a>© 2023 Марина Рафальская. <br> Все права защищены.</a> 
+		</footer>
+        <script>
+			function w3_open() 
+			{
+				document.getElementById("mobile").style.display = "block";
+				
+			}
+			function w3_close() 
+			{
+				document.getElementById("mobile").style.display = "none";
+				
+			}
+		</script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: "Segoe UI", Arial;
+}
+body
+{
+    color: #fff;
+	background-color: #2a4c7d;   
+}
+.aviahead
+{
+    padding: 150px;
+    background-image: url(../img/plane.jpg);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(21, 30, 42, 0.514);
+    background-blend-mode: multiply;
+}
+.aviahead h1
+{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+
+}
+.aviahead h3
+{
+    text-align: center;
+}
+.navigation #desktop
+{
+    height: 50px; 
+    text-align: center;
+    
+}
+.navigation #desktop a
+{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14pt;
+}
+.navigation #desktop a:hover
+{
+	transition: 1.5s all;
+	color: #46cbb9;
+}
+.navigation #mobile a
+{
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.navigation #mobile a:hover
+{
+	transition: 1.5s all;
+	color: #46cbb9;
+}
+@media (min-width: 901px) 
+{
+	.navigation #desktop
+	{
+		font-size: 1em;
+	}
+	.navigation #open_mob
+	{
+        display: none;
+	}
+	.navigation #mobile
+	{
+		display: none;
+	}
+}
+@media (max-width: 900px)
+{
+	.navigation #desktop
+	{
+		display: none;
+	}
+	.navigation #open_mob
+	{
+        font-size: 1em;
+	}
+    #navigation #mobile
+	{
+		font-size: 1em;
+	}
+}
+#first
+{
+    background-image: url(../img/tour.jpg);
+    display: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(21, 30, 42, 0.514);
+    background-blend-mode: multiply;
+    text-align: center;
+	width: 100%;
+    height: 500px;
+	color: #fff;
+    font-size: 12pt;
+    
+
+}
+#first h1
+{
+	color: #fff;
+    text-shadow: 1px 1px 2px black;
+	padding-top: 120px;
+	font-size: 26pt;
+	font-family: "Segoe UI", Arial;
+    vertical-align: middle;
+}
+#first p
+{
+    margin: 15px 10px 20px 10px;
+}
+#ticket
+{
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+	padding-top: 120px;
+	font-family: "Segoe UI", Arial;
+    vertical-align: middle;
+    margin-bottom: 100px;
+
+    background-color: #4343be; 
+    border:6px #dfe2eb ridge;
+
+    padding: 15px 15px 15px 15px; 
+    margin: 20px 15px 15px 20px;
+}
+
+#ticket h3{
+    
+    margin-bottom: 20px;
+
+}
+
+.btns_container input
+{
+    margin-bottom: 20px; 
+}
+footer 
+{
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 12pt;
+	clear: both;
+}
+#table
+{
+    margin: 15px 15px 15px 15px;
+    text-align: center;
+
+}
+#table img{
+    width: 300px;
+    height: 200px;
+    margin: 15px 0px 15px 15px;
+
+}
+
