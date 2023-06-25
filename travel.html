@@ -9,29 +9,23 @@
 		<title>Популярные направления</title>
 	</head>
 	<body>
+    <nav class="w3-sidebar w3-collapse w3-2019-galaxy-blue w3-card-2 w3-animate-left" style="width:200px;" id="mySidenav">
+			<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large w3-hide-large">Закрыть &times;</a>
+			<a href="index.html">Вернуться на главную</a>
+		  
+		</nav>
 		<header>
-			<section class="aviahead">
+      <button class="w3-opennav w3-hide-large w3-animate-left w3-animate-right w3-2019-galaxy-blue" onclick="w3_open()">&#9776;</button>
+			<section class="w3-main" id="ah">
+        
 				<div>
 					<h1><b>Популярные направления</b></h1>
 				</div>
 			</section>
-            <nav class="navigation">
-				<nav class="w3-animate-right w3-2019-galaxy-blue" id="desktop">
-					<a href="index.html">Вернуться на главную</a>
-				</nav>
 
-				<div class="w3-main" style="margin-left:200px" id="open_mob">
-					<button class="w3-opennav w3-hide-large w3-animate-left w3-animate-right w3-2019-galaxy-blue" onclick="w3_open()">&#9776;</button>
-				</div>
-				<nav class="w3-sidenav w3-collapse w3-animate-right w3-2019-galaxy-blue" id="mobile">
-					<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-hide-large">Закрыть &times;</a>
-					<a href="index.html">Вернуться на главную</a>
-				</nav>
-
-			</nav>
-        </header>
-        <section id="table">
-            <table class="w3-table-all w3-large">
+      </header>
+        <section class="w3-main" id="table">
+            <table class="w3-main w3-table w3-large">
 
                 <tr class="w3-hover-blue w3-blue-grey">
                 
@@ -96,12 +90,12 @@
         <script>
 			function w3_open() 
 			{
-				document.getElementById("mobile").style.display = "block";
+				document.getElementById("mySidenav").style.display = "block";
 				
 			}
 			function w3_close() 
 			{
-				document.getElementById("mobile").style.display = "none";
+				document.getElementById("mySidenav").style.display = "none";
 				
 			}
 		</script>

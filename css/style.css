@@ -10,9 +10,11 @@ body
     color: #fff;
 	background-color: #2a4c7d;   
 }
-.aviahead
+#ah
 {
-    padding: 150px;
+    padding: 300px;   
+    width: 100%;
+    height: 600px;
     background-image: url(../img/plane.jpg);
     display: block;
     background-repeat: no-repeat;
@@ -21,80 +23,35 @@ body
     background-color: rgba(21, 30, 42, 0.514);
     background-blend-mode: multiply;
 }
-.aviahead h1
+#ah h1
 {
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
 
 }
-.aviahead h3
+#ah h3
 {
     text-align: center;
+    vertical-align: middle;
 }
-.navigation #desktop
-{
-    height: 50px; 
-    text-align: center;
-    
-}
-.navigation #desktop a
-{
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 14pt;
-}
-.navigation #desktop a:hover
-{
-	transition: 1.5s all;
-	color: #46cbb9;
-}
-.navigation #mobile a
+#mySidenav a
 {
     text-decoration: none;
     margin-bottom: 10px;
+    font-size: 12pt;
     display: flex;
     flex-direction: column;
+    
 }
-.navigation #mobile a:hover
+section
 {
-	transition: 1.5s all;
-	color: #46cbb9;
-}
-@media (min-width: 901px) 
-{
-	.navigation #desktop
-	{
-		font-size: 1em;
-	}
-	.navigation #open_mob
-	{
-        display: none;
-	}
-	.navigation #mobile
-	{
-		display: none;
-	}
-}
-@media (max-width: 900px)
-{
-	.navigation #desktop
-	{
-		display: none;
-	}
-	.navigation #open_mob
-	{
-        font-size: 1em;
-	}
-    #navigation #mobile
-	{
-		font-size: 1em;
-	}
+    margin-left:200px;
 }
 #first
 {
     background-image: url(../img/tour.jpg);
-    display: inherit;
+    display: block;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -102,7 +59,7 @@ body
     background-blend-mode: multiply;
     text-align: center;
 	width: 100%;
-    height: 500px;
+    height: 800px;
 	color: #fff;
     font-size: 12pt;
     
@@ -110,6 +67,7 @@ body
 }
 #first h1
 {
+    text-align: center;
 	color: #fff;
     text-shadow: 1px 1px 2px black;
 	padding-top: 120px;
@@ -119,14 +77,19 @@ body
 }
 #first p
 {
-    margin: 15px 10px 20px 10px;
+    text-align: center;
+    font-size: 16pt;
+    margin: 15px 50px 50px 50px;
 }
+
 #ticket
 {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 2px black;
-	padding-top: 120px;
+    padding: 70px;   
+    width: 100%;
+    height: 300px;
 	font-family: "Segoe UI", Arial;
     vertical-align: middle;
     margin-bottom: 100px;
@@ -134,8 +97,7 @@ body
     background-color: #4343be; 
     border:6px #dfe2eb ridge;
 
-    padding: 15px 15px 15px 15px; 
-    margin: 20px 15px 15px 20px;
+    
 }
 
 #ticket h3{
@@ -146,7 +108,7 @@ body
 
 .btns_container input
 {
-    margin-bottom: 20px; 
+    margin-bottom: 0px; 
 }
 footer 
 {
@@ -158,7 +120,7 @@ footer
 }
 #table
 {
-    margin: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 205px;
     text-align: center;
 
 }
